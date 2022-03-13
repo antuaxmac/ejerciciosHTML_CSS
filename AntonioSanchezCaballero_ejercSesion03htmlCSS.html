@@ -1,0 +1,37 @@
+<!-- Para este ejercicio deberéis introducir una imagen y darle además de un texto alternativo.
+Aparte, añadiréis un audio y un vídeo a vuestra elección, deben tener algunos de los atributos vistos en las sesiones u otros que os parezcan interesantes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercSesion03</title>
+</head>
+<body>
+
+    <h2>Ejemplo de imagen</h2>
+
+    <img src="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/img/grupoMusical.jpeg" alt="Imagen de grupo musical" style="width:300px" />
+
+    <h2>Imagen responsive</h2>
+       
+    <picture>
+    <source media="(min-width: 300px) and (max-width: 400px)" srcset="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/img/monoGuitarra1280x720.jpeg" />
+
+    <source media="(min-width: 401px) and (max-width: 500px)" srcset="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/img/chicaGuitarra640x426.jpeg" />
+
+    <img src="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/img/grupoMusical.jpeg" alt="Imagen de grupo musical" style="width:500px" />     
+    </picture>
+
+    <h2>Sound</h2>
+    <audio src="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/sounds/discoFunk.mp3" autoplay controls preload="none"></audio>
+
+    <h2>Videos</h2>
+    <video width="400" height="300" controls autoplay src="/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion03/video/paisaje.mp4" type="video/mp4">  
+    Su navegador no soporta este vídeo </video><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MoKmQFZDOaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+</body>
+</html>
