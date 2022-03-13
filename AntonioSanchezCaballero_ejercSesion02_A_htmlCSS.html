@@ -1,0 +1,97 @@
+<!-- Crea un formulario en el que haya que introducir los siguientes datos: Nombre, Apellido, e-mail, teléfono y dirección.
+Como segunda parte del ejercicio deberás crear una tabla, esta tabla tendrá 4 columnas y 4 filas, en esta tabla deberás hacer que:
+	•	
+	•	Una de las celdas ocupe tres columnas.
+	•	Una de las celdas ocupe dos filas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercSesion02</title>
+</head>
+<body>
+    <form id="registerForm" action="recepForm.html" method="post">
+
+    <h2>Formulario de registro</h2>
+
+     <fieldset>
+        <legend>Datos de contacto</legend><br>
+
+        <label for="name">Nombre</label><br>
+        <input type="text" id="name" pattern="[A-Za-z0-9]+" requiered type="text" placeholder="Nombre" name="name"><br>
+        <br>
+
+        <label for="firstName">Primer apellido</label><br>
+        <input type="text" id="firstName" pattern="[A-Za-z0-9]+" requiered type="text" placeholder="Primer apellido" name="firstName"><br>
+        <br>
+
+        <label for="secondName">Segundo apellido</label><br>
+        <input type="text" id="secondName" pattern="[A-Za-z0-9]+" requiered type="text" placeholder="Segundo apellido" name="secondName"><br>
+        <br>
+
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+
+        <label for="phone">Teléfono</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        <br>
+        
+        <label for="adress">Dirección</label><br>
+        <input type="text" id="adrees" pattern="[A-Za-z0-9]+" requiered type="text" placeholder="Dirección" name="adrees"><br>
+        <br>
+
+        <input type="submit" value="Enviar">
+        
+    </fieldset>
+    </form><br>
+    <br>
+
+    <caption><h2>Tabla</h2></caption>
+      
+    <table id="tableTeams" border="1">
+
+        <thead>
+            <tr>
+                <th>Equipo_1</th>
+                <th>Equipo_2</th>
+                <th>Equipo_3</th>
+                <th>Equipo_4</th>
+            </tr>
+        </thead>        
+
+        <tbody>
+            <tr>
+                <td>Antonio</td>
+                <td colspan="3">Virginia (abarca 3 columnas)</td>
+            </tr>
+
+            <tr>
+                <td>Antonio</td>
+                <td>Encarnita</td>
+                <td>Alfredo</td>
+                <td>Nicole</td>
+            </tr>
+
+            <tr>
+                <td>Alfredo</td>
+                <td>Nieves</td>
+                <td rowspan="2">Pepe<br>abarca 2 filas</td>
+                <td>Pepa</td>
+            </tr>
+
+            <tr>
+                <td>Manoli</td>
+                <td>Pepe</td>
+                <td>Miguel Ángel</td>
+            </tr>
+        </tbody>    
+
+    </table>
+
+</body>
+</html>
+
+
