@@ -1,0 +1,52 @@
+<!--En este ejercicio deberéis crear una página con un formulario de inicio de sesión, está pagina tendrá:
+	•	Una imagen de fondo.
+	•	Un formulario de inicio de sesión, contendrá mail y contraseña, un recuadro seleccionable de "Acepto términos y condiciones" y un botón de enviar.
+	•	Validación de campos.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ejercSesion07</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilosEjerc07.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="loginForm">
+            <form>
+                <h1>Inicio de sesión</h1>
+
+                <div class="loginForm__field">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" class="loginForm__field--email" required placeholder="micorreo@ejemplo.com"/>
+                </div>
+
+                <div class="loginForm__field">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" class="login-form__field--password" required placeholder="contraseña"/>
+                </div>
+
+                <div class="loginForm__field">
+                    <input type="checkbox" name="chekbox" id="chekbox" class="login-form__field--checkbox" required/>
+                    <label for="check">Acepto términos y condiciones</label>
+                </div>
+
+                <div class="loginForm__button">
+                    <button type="submit" class="loginForm__button--button">Enviar</button> 
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

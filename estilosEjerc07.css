@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;; 
+    padding:0;
+  }
+
+body {
+    
+    background-image: url("/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion07/img/island.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    font-family:'Poppins';
+}
+h1 {
+  color: rgb(10, 64, 163);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  background-color: #ffffff;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  margin:20px;
+}
+
+.loginForm__field {
+  margin-bottom: 15px;
+}
+
+.loginForm__field input {
+  display: block;
+  width : 300px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  color:rgb(68, 66, 66);
+  text-align:left;
+  padding-left: 5px;
+}
+
+input#password {
+  background-image: url("/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion07/img/key.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding-left: 35px;
+}
+
+input#email {
+  background-image: url("/Users/antonio/Desktop/Open Boot Camp /HTML+CSS/Ejercicios/ejercSesion07/img/user.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+  padding-left: 35px;
+}
+
+input#chekbox {
+  display: inline;
+  margin-left: -1px;
+  width : 30px;
+  height: 30px;
+  }
+
+[for="check"] {
+  font-size: 14px;
+  position:relative;
+  color:rgb(141, 138, 138);
+}
+
+button.loginForm__button--button {
+  cursor:pointer;
+  background-color: rgb(150, 153, 153);
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+input:invalid {
+  color:#ff0000;
+}
